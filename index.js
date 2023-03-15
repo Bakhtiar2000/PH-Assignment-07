@@ -139,6 +139,8 @@ document.getElementById("submit").addEventListener("click", () => {
     );
   }
 
+  // console.log(storage)
+
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
@@ -157,7 +159,7 @@ document.getElementById("submit").addEventListener("click", () => {
     </p>
   </div>
   
-  <button onclick="location.reload();" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
+  <button onclick="location.reload()" class="bg-green-600 text-white w-full py-2 rounded mt-16">Restart</button>
   ${
     storage
       ? `<div class="mt-5">
@@ -188,3 +190,8 @@ document.getElementById("submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+document.getElementById('blog').addEventListener('click', function(){
+  window.location.href= "blog.html"
+} )
