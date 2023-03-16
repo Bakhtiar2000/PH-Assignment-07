@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Blog</title>
+</head>
+<body>
+    <section class="container my-5 ">
+        <h1>1. Show the differences between map, filter, forEach and find</h1>
+        <div class="table-responsive mb-3">
+            <table class="table align-middle">
+              <thead class="fs-4">
+                <tr>
+                  <td>map</td>
+                  <td>filter</td>
+                  <td>forEach</td>
+                  <td>find</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>map method is used to iterate through an array and create a new array by performing an operation on each element of the original array</td>
+                  <td>filter method is used to iterate through an array and create a new array that contains only the elements that pass a given test</td>
+                  <td>forEach method is used to iterate through an array and perform a given operation on each element of the array</td>
+                  <td>find method is used to iterate through an array and return the first element that passes a given test</td>
+                </tr>
+                <tr>
+                  <td>Returns a new array of the same length as the original array</td>
+                  <td>Returns a new array that may have a different length than the original array</td>
+                  <td>Does not return anything and does not create a new array</td>
+                  <td>Returns the value of the first element that satisfies the condition or undefined if no such element is found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <h1>2. Show the differences between localStorage, sessionStorage and cookies</h1>
+        <div class="table-responsive mb-3">
+            <table class="table align-middle">
+              <thead class="fs-4">
+                <tr>
+                  <td>localStorage</td>
+                  <td>sessionStorage</td>
+                  <td>cookies</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>The localStorage object is used to store data that should persist even after the user closes the browser</td>
+                  <td>The sessionStorage object is used to store data that should only persist for the duration of the user's session</td>
+                  <td>Cookies are small text files that are stored on the user's device by the website</td>
+                </tr>
+                <tr>
+                  <td>localStorage has no expiration time, and the data is available across all windows and tabs of the same origin.</td>
+                  <td>sessionStorage is available only for the current window or tab and is lost when the user closes the browser or navigates away from the website.</td>
+                  <td>Cookies can have an expiration time and can be used across different websites</td>
+                </tr>
+                <tr>
+                  <td>localStorage data are not sent to the server with each HTTP request. It is accessible from only user side</td>
+                  <td>sessionStorage data are not sent to the server with each HTTP request. It is accessible from only user side</td>
+                  <td>cookies data are sent to the server with each HTTP request. So it is accessible from both client and server side</td>
+                </tr>
+                <tr>
+                  <td>localStorage data is stored without asking for permission</td>
+                  <td>sessionStorage data is stored without asking for permission</td>
+                  <td>cookies data asks for permission</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        <h1>3. What is Event Loop and how does it work?</h1>
+        <p>The event loop is a mechanism in JavaScript that allows for asynchronous operations to be executed in a non-blocking manner. It handles the execution of code in response to events such as user interactions, network requests, and timers. <br><br>
+        The event loop works by continuously monitoring the call stack and the message queue.When an event is triggered, such as a user clicking a button or a network request completing, a message is added to the message queue. The event loop continuously checks the call stack and the message queue. If the call stack is empty, it takes the first message from the queue and pushes it onto the call stack. This results in the associated function being executed. If the call stack is not empty, the message remains in the queue until the call stack is cleared. <br><br>
+        This process allows JavaScript to handle asynchronous operations without blocking the execution of other code.
+        </p>
+    </section>
+
+    <section class="container my-5">
+        <h1 class="text-center mb-4"><u>Extra Questions</u></h1>
+        <h4>#Explain the function quizTimer in brief</h5>
+        <p>...</p>
+        <h4>#Explain the function chooseQuiz in brief</h5>
+        <p>...</p>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
